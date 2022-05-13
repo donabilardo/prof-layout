@@ -1,4 +1,86 @@
 @import url(../css/normalize.css);
-.test {
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300&display=swap');
+
+//Цвета для текста
+$text_color-pink: #F16D7F;
+$text_color-black: #222222;
+$text_color-gray: #9F9F9F;
+$text_color-white:#FBFBFB;
+//блок продуктов
+$product_head: #000000;
+$product_price:#F16D7F;
+$product_text:#5D5D5D;
+//блок с фичами
+$feature_icon:#F16D7F;
+$feature_text:#FBFBFB;
+$feature_bgcolor:#222224;
+
+//body
+$body-bgcolor:#E5E5E5;
+
+//Контейнер
+$container_desktop-maxwidth:1600px;
+$container_tablet-maxwidth:768px;
+$container_mobile-maxwidth:375px;
+
+//навбар
+$nav_bg-color: #222222;
+$nav_icon-color:#E8E8E8;
+$nav_badge-color:#F16D7F;
+
+//блок hero
+$hero_bg-color:#F1E4E6;
+$hero_max-h_desktop:764px;
+$hero_heading_block_desktop:405px;
+
+
+$hero_max-tablet:365px;
+$hero_max-mobile:765px;
+
+
+
+//SUBSCRIBE
+$subscribe_text-color:#222224;
+$suscribe_input-bgcolor:#E1E1E1;
+$suscribe_button_bgcolor:#F16D7F;
+$subscribe_button-textcolor:#F16D7F;
+
+//FOOTER
+$footer_bg-color:#222224;
+$footer_text-color:#FBFBFB;
+$footer_icon-bgcolor:#FFFFFF;
+$footer_bg-color-hover:#F16D7F;
+$footer_icon_text-color:#000000;
+$footer_font_size-desktop:16px;
+$footer_line_height-desktop:19px;
+$footer_font-weight-desktop:400;
+
+@mixin footer_text() {
+    font-size: $footer_font_size-desktop;
+    line-height: $footer_line_height-desktop;
+    font-weight: $footer_font-weight-desktop;
+    color: $footer_text-color;
 }
+
+
+
+
+
+
+
+body {
+    background-color: $body-bgcolor;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+
+.container {
+    max-width:$container_desktop-maxwidth ;
+    margin: 0 auto;
+}
+
+
