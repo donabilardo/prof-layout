@@ -1,6 +1,7 @@
 @import url(../css/normalize.css);
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300&display=swap");
 body {
+  max-height: 1600px;
   background-color: #E5E5E5;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -30,8 +31,116 @@ body {
   background: #222224;
 }
 
+.header_wrap {
+  min-height: 75px;
+  background: #222222;
+}
+
 .container {
-  max-width: 1600px;
+  max-width: 1140px;
   margin: 0 auto;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 75px;
+}
+
+.nav .navleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.nav .navleft ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .navleft ul li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .navleft ul li:first-child {
+  margin-left: 8px;
+}
+
+.nav .navleft ul li:first-child img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.nav .navleft ul li:last-child {
+  margin-left: 40px;
+}
+
+.nav .navleft ul li:last-child img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.nav .navright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.nav .navright ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .navright ul li {
+  list-style: none;
+}
+
+.nav .navright ul li:first-child {
+  margin-right: 25px;
+}
+
+.nav .navright ul li:last-child {
+  margin-left: 42px;
+  margin-right: 8px;
+}
+
+.nav .navright ul .menu span {
+  width: 32px;
+  height: 4px;
+  background: #E8E8E8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav .navright ul .menu span:first-child {
+  margin-bottom: 8px;
+}
+
+.nav .navright ul .menu span:last-child {
+  margin-top: 8px;
 }
 /*# sourceMappingURL=style.css.map */

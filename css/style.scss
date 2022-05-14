@@ -19,7 +19,7 @@ $feature_bgcolor:#222224;
 $body-bgcolor:#E5E5E5;
 
 //Контейнер
-$container_desktop-maxwidth:1600px;
+$container_desktop-maxwidth:1140px;
 $container_tablet-maxwidth:768px;
 $container_mobile-maxwidth:375px;
 
@@ -67,23 +67,33 @@ $footer_font-weight-desktop:400;
 
 
 body {
+    max-height: 1600px;
     background-color: $body-bgcolor;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+
 }
+
 .top_wrap {
     display: flex;
     flex-direction: column;
 }
+
 .content_wrap {
-    min-height: calc(100vh - 80px);//высота футера для ПК версии
+    min-height: calc(100vh - 80px); //высота футера для ПК версии
     flex-grow: 1;
 }
+
 .bottom_wrap {
     min-height: 80px;
     background: $footer_bg-color;
+}
+
+.header_wrap {
+    min-height: 75px;
+    background: $nav_bg-color;
 }
 
 
@@ -91,3 +101,83 @@ body {
     max-width: $container_desktop-maxwidth;
     margin: 0 auto;
 }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+
+    .navleft {
+        display: flex;
+        align-self: center;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                list-style: none;
+                display: flex;
+
+                &:first-child {
+                    margin-left: 8px;
+
+                    img {
+                        align-self: center;
+                    }
+                }
+
+                &:last-child {
+                    margin-left: 40px;
+
+                    img {
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .navright {
+        display: flex;
+        align-self: center;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                list-style: none;
+
+                &:first-child {
+                    margin-right: 25px;
+                }
+                &:last-child{
+                    margin-left: 42px;
+                    margin-right: 8px;
+                }
+            }
+
+            .menu span {
+                width: 32px;
+                height: 4px;
+                background: #E8E8E8;
+                display: flex;
+                flex-direction: column;
+
+                &:first-child {
+                    margin-bottom: 8px;
+                }
+
+                &:last-child {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+
+}
+
+//nav
